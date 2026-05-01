@@ -261,10 +261,10 @@ export default function Index() {
               <img src={LOGO_URL} alt="Герб" className="w-full h-full object-contain" style={{ filter: "invert(1)", mixBlendMode: "screen" }} />
             </div>
 
-            <div className="max-w-2xl">
+            <div className="max-w-2xl text-center lg:text-left">
               <p className="animate-fade-in opacity-0 text-xs tracking-[0.35em] uppercase mb-6"
                 style={{ color: ACCENT, animationFillMode: "forwards" }}>
-                Юридическая практика · Москва
+                Юридическая практика · Краснодар
               </p>
               <h1 className="animate-fade-in opacity-0 text-white leading-[1.05] mb-4"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.6rem, 7vw, 5.5rem)", animationDelay: "0.1s", animationFillMode: "forwards" }}>
