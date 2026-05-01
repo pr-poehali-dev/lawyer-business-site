@@ -33,16 +33,17 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Law firm custom colors */
-    --navy: 220 45% 12%;
-    --navy-light: 220 35% 18%;
-    --navy-mid: 220 30% 25%;
-    --gold: 42 85% 52%;
-    --gold-light: 42 75% 70%;
-    --cream: 40 25% 96%;
-    --cream-dark: 35 20% 90%;
-    --text-primary: 220 45% 10%;
-    --text-secondary: 220 20% 40%;
+    /* Law firm — strict grey palette */
+    --navy: 210 12% 14%;
+    --navy-light: 210 10% 20%;
+    --navy-mid: 210 8% 28%;
+    --gold: 210 6% 38%;
+    --gold-light: 210 5% 58%;
+    --cream: 210 12% 96%;
+    --cream-dark: 210 8% 88%;
+    --text-primary: 210 15% 11%;
+    --text-secondary: 210 8% 44%;
+    --accent-col: 210 7% 34%;
   }
 }
 
@@ -66,46 +67,6 @@
 @layer utilities {
   .font-display {
     font-family: "Cormorant Garamond", serif;
-  }
-
-  .text-navy {
-    color: hsl(var(--navy));
-  }
-
-  .text-gold {
-    color: hsl(var(--gold));
-  }
-
-  .bg-navy {
-    background-color: hsl(var(--navy));
-  }
-
-  .bg-navy-light {
-    background-color: hsl(var(--navy-light));
-  }
-
-  .bg-navy-mid {
-    background-color: hsl(var(--navy-mid));
-  }
-
-  .bg-gold {
-    background-color: hsl(var(--gold));
-  }
-
-  .bg-cream {
-    background-color: hsl(var(--cream));
-  }
-
-  .bg-cream-dark {
-    background-color: hsl(var(--cream-dark));
-  }
-
-  .border-gold {
-    border-color: hsl(var(--gold));
-  }
-
-  .border-navy {
-    border-color: hsl(var(--navy));
   }
 
   .opacity-0 {
@@ -135,7 +96,7 @@
   }
 }
 
-/* Decorative gold line */
+/* Decorative accent line */
 .gold-line::after {
   content: "";
   display: block;
