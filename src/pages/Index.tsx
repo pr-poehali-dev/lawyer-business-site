@@ -193,6 +193,14 @@ export default function Index() {
             ))}
           </nav>
 
+          <button
+            onClick={() => scrollTo("booking")}
+            className="hidden lg:block px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-opacity hover:opacity-80"
+            style={{ border: "1px solid rgba(255,255,255,0.35)", color: "white" }}
+          >
+            Записаться
+          </button>
+
           {/* Contact info — desktop */}
           <div className="hidden lg:flex flex-col items-end">
             <a href="tel:+79528137492" className="text-xs font-medium text-white hover:opacity-70 transition-opacity" style={{ letterSpacing: "0.03em" }}>
@@ -203,16 +211,8 @@ export default function Index() {
             </a>
           </div>
 
-          <button
-            onClick={() => scrollTo("booking")}
-            className="hidden lg:block px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-opacity hover:opacity-80"
-            style={{ border: "1px solid rgba(255,255,255,0.35)", color: "white" }}
-          >
-            Записаться
-          </button>
-
           {/* Contact info — mobile (left of burger) */}
-          <div className="lg:hidden flex flex-col items-end mr-3">
+          <div className="lg:hidden flex flex-col items-end">
             <a href="tel:+79528137492" className="text-xs font-medium text-white hover:opacity-70 transition-opacity" style={{ letterSpacing: "0.02em" }}>
               +7 952 813-74-92
             </a>
