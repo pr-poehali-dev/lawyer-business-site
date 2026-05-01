@@ -167,7 +167,7 @@ export default function Index() {
               src={LOGO_URL}
               alt="Логотип"
               className="w-10 h-10 object-contain"
-              style={{ filter: "invert(1) brightness(0.85)" }}
+              style={{ filter: "invert(1) brightness(0.85)", mixBlendMode: "screen" }}
             />
             <div className="hidden sm:flex flex-col items-start">
               <span style={{ fontFamily: "'Cormorant Garamond', serif", color: "white", fontSize: 17, fontWeight: 600, lineHeight: 1.1, letterSpacing: "0.03em" }}>
@@ -193,6 +193,16 @@ export default function Index() {
             ))}
           </nav>
 
+          {/* Contact info — desktop */}
+          <div className="hidden lg:flex flex-col items-end">
+            <a href="tel:+79528137492" className="text-xs font-medium text-white hover:opacity-70 transition-opacity" style={{ letterSpacing: "0.03em" }}>
+              +7 952 813-74-92
+            </a>
+            <a href="mailto:krasnodarlaw23@yandex.ru" className="text-xs mt-0.5 hover:opacity-70 transition-opacity" style={{ color: "rgba(255,255,255,0.45)", fontSize: 10 }}>
+              krasnodarlaw23@yandex.ru
+            </a>
+          </div>
+
           <button
             onClick={() => scrollTo("booking")}
             className="hidden lg:block px-5 py-2 text-xs font-semibold tracking-wider uppercase transition-opacity hover:opacity-80"
@@ -200,6 +210,16 @@ export default function Index() {
           >
             Записаться
           </button>
+
+          {/* Contact info — mobile (left of burger) */}
+          <div className="lg:hidden flex flex-col items-end mr-3">
+            <a href="tel:+79528137492" className="text-xs font-medium text-white hover:opacity-70 transition-opacity" style={{ letterSpacing: "0.02em" }}>
+              +7 952 813-74-92
+            </a>
+            <a href="mailto:krasnodarlaw23@yandex.ru" className="text-xs mt-0.5 hover:opacity-70 transition-opacity" style={{ color: "rgba(255,255,255,0.45)", fontSize: 10 }}>
+              krasnodarlaw23@yandex.ru
+            </a>
+          </div>
 
           <button className="lg:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>
             <Icon name={menuOpen ? "X" : "Menu"} size={22} />
@@ -238,7 +258,7 @@ export default function Index() {
 
             {/* Logo large */}
             <div className="hidden lg:flex flex-shrink-0 items-center justify-center w-64 h-64 opacity-20">
-              <img src={LOGO_URL} alt="Герб" className="w-full h-full object-contain" style={{ filter: "invert(1)" }} />
+              <img src={LOGO_URL} alt="Герб" className="w-full h-full object-contain" style={{ filter: "invert(1)", mixBlendMode: "screen" }} />
             </div>
 
             <div className="max-w-2xl">
@@ -677,7 +697,7 @@ export default function Index() {
       <footer className="py-8" style={{ backgroundColor: "hsl(var(--navy-light))", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="Лого" className="w-7 h-7 object-contain opacity-30" style={{ filter: "invert(1)" }} />
+            <img src={LOGO_URL} alt="Лого" className="w-7 h-7 object-contain opacity-30" style={{ filter: "invert(1)", mixBlendMode: "screen" }} />
             <p className="text-xs" style={{ color: "rgba(255,255,255,0.25)" }}>© 2024 Гречко и Партнёры. Все права защищены.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-5">
